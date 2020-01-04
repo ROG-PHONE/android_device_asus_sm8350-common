@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Frameworks
+PRODUCT_PACKAGES += \
+    FrameworksResOverlay
+    
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
