@@ -266,5 +266,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
+# Sepolicy
+include $(COMMON_PATH)/sepolicy/SEPolicy.mk
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/qva/private
+                                   
 # Treble
 BOARD_VNDK_VERSION := current
