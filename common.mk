@@ -46,6 +46,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
+# Boot Control
+PRODUCT_PACKAGES += \
+    bootctrl.lahaina \
+    bootctrl.lahaina.recovery
+	
 # Display
 PRODUCT_PACKAGES += \
     libion \
