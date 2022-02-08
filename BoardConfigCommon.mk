@@ -268,7 +268,10 @@ TARGET_USES_MKE2FS := true
 
 # Sepolicy
 include $(COMMON_PATH)/sepolicy/SEPolicy.mk
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/qva/private
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private \
+                                   $(COMMON_PATH)/sepolicy/qva/private
+
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/product/private
                                    
 # Treble
 BOARD_VNDK_VERSION := current
