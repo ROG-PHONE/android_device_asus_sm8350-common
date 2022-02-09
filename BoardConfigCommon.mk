@@ -18,16 +18,15 @@
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps).
 #
-COMMON_PATH := device/asus/sm8250-common
+COMMON_PATH := device/asus/sm8350-common
 IMAGES_PATH := vendor/images/asus/$(TARGET_DEVICE)
 
 BOARD_VENDOR := asus
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a
+TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := kryo385
 
@@ -44,7 +43,7 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := kona
+TARGET_BOOTLOADER_BOARD_NAME := lahaina
 TARGET_NO_BOOTLOADER := true
 
 # A/B
@@ -162,8 +161,8 @@ BOARD_PREBUILT_VENDORIMAGE := $(IMAGES_PATH)/vendor.img
 BOARD_ROOT_EXTRA_FOLDERS += ADF APD asdf batinfo xrom
 
 # Platform
-TARGET_BOARD_PLATFORM := kona
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
+TARGET_BOARD_PLATFORM := lahaina
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno660
 
 # Properties
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
